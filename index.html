@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" ng-app='myApp'>
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplication Table</title>
+    <!-- note that here we’re linking to a CDN version of Angular  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+</head>
+<body>
+    <table ng-controller="MultiplicationCtrl">
+        <tr ng-repeat="y in range(yMin, yMax)">
+            <td ng-repeat="x in range(xMin, xMax)">
+                {{ x * y }}
+            </td>
+        </tr>
+    </table>
+    <script src="myApp.js" type="text/javascript"></script>
+</body>
+</html>
