@@ -11,7 +11,7 @@
     <table ng-controller="MultiplicationCtrl">
         <tr ng-repeat="y in range(yMin, yMax)">
             <td ng-repeat="x in range(xMin, xMax)">
-                {{ x * y }}
+                {{ compute(x, y) }}
             </td>
         </tr>
     </table>
